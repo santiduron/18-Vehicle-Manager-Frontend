@@ -1,0 +1,32 @@
+<div class="panel">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+        <th>Telephone</th>
+        <th width="1%"></th>
+        <th width="1%"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="value in customersGridCtrl.customers">
+        <td>{{value.firstName}}</td>
+        <td>{{value.lastName}}</td>
+        <td>{{value.emailAddress}}</td>
+        <td>{{value.telephone}}</td>
+        <td>
+          <a ui-sref="customers.detail({ id: 1 })" class="btn btn-primary">
+            <i class="glyphicon glyphicon-edit"></i>
+          </a>
+        </td>
+        <td>
+          <button class="btn btn-danger" ng-click="customersGridCtrl.remove(value)" ng-model="customersGridCtlr.customers">
+                    <i class="glyphicon glyphicon-trash"></i>
+                </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

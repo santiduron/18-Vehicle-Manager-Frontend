@@ -1,0 +1,56 @@
+<div class="panel panel-primary">
+  <!--panel-(info, success, danger, warning etc -->
+  <div class="panel-heading">
+    Edit Vehicle Information
+  </div>
+  <div class="panel-body">
+    <div class="form-group">
+      <div class="row">
+        <div class="col-xs-6">
+          <div class="form-group">
+            <label for="make">Automobile Make</label>
+            <input id="make" type="text" class="form-control" ng-model="vehiclesDetailCtrl.vehicle.make">
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <div class="form-group">
+            <label for="">Vehicle Model</label>
+            <input id="model" type="text" class="form-control" ng-model="vehiclesDetailCtrl.vehicle.model">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6">
+          <div class="form-group">
+            <label for="">Vehicle Type</label>
+            <input id="vehicleType" type="text" class="form-control" ng-model="vehiclesDetailCtrl.vehicle.vehicleType">
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <div class="form-group">
+            <label for="">Year</label>
+            <input id="year" type="text" class="form-control" ng-model="vehiclesDetailCtrl.vehicle.year">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6">
+          <div class="form-group">
+            <label for="">Color</label>
+            <input id="color" type="text" class="form-control" ng-model="vehiclesDetailCtrl.vehicle.color">
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <div class="form-group">
+            <label for="">Retail Price</label>
+            <input id="retailPrice" type="text" class="form-control" ng-model="vehiclesDetailCtrl.vehicle.retailPrice | currency " $ " ">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="panel-footer clearfix">
+      <button class="btn btn-success pull-right" ng-click="vehiclesDetailCtrl.save()">
+        Save <i class="glyphicon glyphicon-save"></i>
+      </button>
+    </div>
+  </div>

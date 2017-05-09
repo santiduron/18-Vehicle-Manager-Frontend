@@ -1,0 +1,24 @@
+{
+  "name": "vehicle-manager-web-base",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "postinstall": "bower install"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.4",
+    "bower": "^1.8.0",
+    "browser-sync": "^2.18.8",
+    "express": "^4.15.2",
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-inject": "^4.2.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-open": "^2.0.0",
+    "gulp-util": "^3.0.8",
+    "wiredep": "^4.0.0"
+  }
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Vehicle Manager</title>
+
+  <!-- bower:css -->
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="bower_components/toastr/toastr.css" />
+  <link rel="stylesheet" href="bower_components/sweetalert/dist/sweetalert.css" />
+  <link rel="stylesheet" href="bower_components/angular-ui-select/dist/select.css" />
+  <!-- endbower -->
+
+  <!-- inject:css -->
+  <!-- endinject -->
+
+  <style>
+    body {
+      background-image: url("http://wallpapercave.com/wp/9Ovh10r.jpg");
+    }
+
+    .table-striped>tbody>tr:nth-of-type(even) {
+      background-color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              </button>
+        <a class="navbar-brand" href="#">Vehicle Manager</a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a ui-sref="dashboard">Dashboard</a></li>
+          <li><a ui-sref="customers.grid">Customers</a></li>
+          <li><a ui-sref="sales.grid">Sales</a></li>
+          <li><a ui-sref="vehicles.grid">Vehicles</a></li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+  <div ui-view></div>
+  <!-- bower:js -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="bower_components/toastr/toastr.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="bower_components/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="bower_components/ngSweetAlert/SweetAlert.js"></script>
+  <script src="bower_components/angular-ui-select/dist/select.js"></script>
+  <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+  <!-- endbower -->
+  <!-- inject:js -->
+  <script src="app/app.module.js"></script>
+  <script src="app/customers/customers.module.js"></script>
+  <script src="app/dashboard/dashboard.module.js"></script>
+  <script src="app/sales/sales.module.js"></script>
+  <script src="app/vehicles/vehicles.module.js"></script>
+  <script src="app/customers/customers.detail.controller.js"></script>
+  <script src="app/customers/customers.factory.js"></script>
+  <script src="app/customers/customers.grid.controller.js"></script>
+  <script src="app/dashboard/dashboard.controller.js"></script>
+  <script src="app/dashboard/dashboard.factory.js"></script>
+  <script src="app/sales/sales.detail.controller.js"></script>
+  <script src="app/sales/sales.factory.js"></script>
+  <script src="app/sales/sales.grid.controller.js"></script>
+  <script src="app/vehicles/vehicles.detail.controller.js"></script>
+  <script src="app/vehicles/vehicles.factory.js"></script>
+  <script src="app/vehicles/vehicles.grid.controller.js"></script>
+  <!-- endinject -->
+</body>
+
+</html>

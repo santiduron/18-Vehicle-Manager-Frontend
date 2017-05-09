@@ -1,0 +1,41 @@
+<div class="panel panel-primary">
+  <!--panel-(info, success, danger, warning etc -->
+  <div class="panel-heading">
+    Edit Customer
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-xs-6">
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input id="firstName" type="text" class="form-control" ng-model="customersDetailCtrl.customer.firstName">
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <div class="form-group">
+          <label for="">Last Name</label>
+          <input id="lastName" type="text" class="form-control" ng-model="customersDetailCtrl.customer.lastName">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-6">
+        <div class="form-group">
+          <label for="">Email Address</label>
+          <input id="emailAddress" type="text" class="form-control" ng-model="customersDetailCtrl.customer.emailAddress">
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <div class="form-group">
+          <label for="">Telephone</label>
+          <input id="telephone" type="text" class="form-control" ng-model="customersDetailCtrl.customer.telephone">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel-footer clearfix">
+    <button class="btn btn-success pull-right" ng-click="customersDetailCtrl.save()">
+        Save <i class="glyphicon glyphicon-save"></i>
+      </button>
+  </div>
+</div>
